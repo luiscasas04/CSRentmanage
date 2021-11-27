@@ -5,18 +5,18 @@ from email.message import EmailMessage
 
 class Employee:
     # initialize the attributes
-    def __init__(self, employee_name, employee_age, employee_ID, employee_gender):
+    def __init__(self,  employee_ID, employee_name, employee_age, employee_gender):
+        self.employee_ID = employee_ID
         self.employee_name = employee_name
         self.employee_age = employee_age
-        self.employee_ID = employee_ID
         self.employee_gender = employee_gender
 
-    # set the attributes
-    def set_name(self, employee_name):
-        self.employee_name = employee_name
-
+    # set the attribute 
     def set_id(self, employee_ID):
         self.employee_ID = employee_ID
+        
+    def set_name(self, employee_name):
+        self.employee_name = employee_name
 
     def set_age(self, employee_age):
         self.employee_age = employee_age
@@ -25,22 +25,22 @@ class Employee:
         self.employee_gender = employee_gender
 
     # return the attributes
+    def get_id(self):
+        return self.employee_ID
+    
     def get_name(self):
         return self.employee_name
 
     def get_age(self):
         return self.employee_age
 
-    def get_id(self):
-        return self.employee_ID
-
     def get_gender(self):
         return self.employee_gender
 
     # return the objects state as a string
     def __str__(self):
-        return 'Name: ' + self.employee_name + \
-               '\nID number: ' + self.employee_ID + \
+        return 'ID Number: ' + self.employee_ID + \
+               '\nName: ' + self.employee_name + \
                '\nAge: ' + self.employee_age + \
                '\nGender: ' + self.employee_gender
 
