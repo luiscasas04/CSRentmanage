@@ -1,0 +1,5 @@
+john.handcock,Oldman45
+mary.marison,Mary99
+luis.trevino,Trevino557
+fabrice.johnson,Password123
+samus.aran,Metroid55
