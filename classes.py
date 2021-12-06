@@ -3,6 +3,7 @@ from _typeshed import Self
 import smtplib
 from email.message import EmailMessage
 
+    # added by Dzidzornu, Yesulagbe 11/22/21
 class Employee:
     # initialize the attributes
     def __init__(self,  employee_ID, employee_name, employee_age, employee_gender):
@@ -48,6 +49,7 @@ class Employee:
 #################################################
 
 
+    # added by Dzidzornu, Yesulagbe 11/22/21
 class Resident:
     # initialize the attributes
     def __init__(self, resident_apt_num, resident_name, resident_age, resident_ID, resident_gender, resident_password,):
@@ -115,6 +117,9 @@ class Resident:
 
 
 ###################################
+
+
+    # added by Dzidzornu, Yesulagbe 11/22/21
 class Landlord:
     # initialize landlord attributes
     def __init__(self, landlord_name, landlord_age, landlord_ID, landlord_gender):
@@ -159,6 +164,8 @@ class Landlord:
 
 ##################################
 
+
+    # added by Dzidzornu, Yesulagbe 11/22/21
 class Apartment:
     # initialize the apartment attributes
     def __init__(self, apartment_number, flat_size, number_of_bedrooms):
@@ -195,6 +202,7 @@ class Apartment:
 
 ##########################
 
+    # added by Casas, Luis 11/23/21
 class Lease:
 
     def __init__(self, leaseID, lengthOfLease, securityDeposit, endOfLease):
@@ -237,6 +245,7 @@ class Lease:
                '\nEnd Of Lease: ' + self.endOfLease
 
 
+    # added by Casas, Luis 11/23/21
 class Rent:
 
     def __init__(self, rentInfo, paymentDueDate, paymentHistory):
@@ -273,7 +282,8 @@ class Rent:
                '\nPayment Due Date: ' + self.paymentDueDate + \
                '\nPayment History: ' + self.paymentHistory
 
-
+    
+    # added by Casas, Luis 11/23/21
 class reminder:
     
 
@@ -343,6 +353,7 @@ class reminder:
         
 ###########################################################################
 
+    # added by Baxi, Utsav 11/24/21
  class AddResident(Resident):
  
    #AddResident is a a child class derived from Resident class so we pass the attributes from __init__(self):
@@ -373,8 +384,9 @@ class reminder:
        self.resident_gender = new_resident_gender
        print("You have succesfully updated:" + self.resident_name)
  
-        
-        
+###########################################################################
+
+    # added by Baxi, Utsav 11/24/21        
 class Insurance:
     insurance_name = None
     expiration = None
@@ -403,7 +415,9 @@ class Insurance:
 
 
 ###########################################################################
-        class Employee:
+
+    # added by Baxi, Utsav 11/24/21
+ class Employee:
     # initialize the attributes
     def __init__(self, employee_name, employee_age, employee_ID, employee_gender):
         self.employee_name = employee_name
@@ -447,6 +461,7 @@ class Insurance:
 
 #################################################
 
+    # added by Baxi, Utsav 11/24/21
 class Apartment:
     # initialize the apartment attributes
     def __init__(self, apartment_number, flat_size, number_of_bedrooms):
@@ -481,7 +496,8 @@ class Apartment:
                '\nNumber Of Bedrooms: ' + self.number_of_bedrooms
 
 ######################################################################
-
+   
+    # added by Diaz, Bryan 11/24/21
 class MonthlyPayment(Apartment):
     def __init__(self, apartment_number, flat_size, number_of_bedrooms, payment, price, date):
         Apartment.__init__(self, apartment_number, flat_size, number_of_bedrooms)
@@ -500,6 +516,7 @@ class MonthlyPayment(Apartment):
 
 ###########################################################
 
+    # added by Diaz, Bryan 11/24/21
 class AddEmployee(Employee):
    #AddEmploye is a a child class derived from Employee so we pass the attributes from __init__(self):
    def __init__(self, employee_name, employee_age, employee_ID, employee_gender):
@@ -531,6 +548,7 @@ class AddEmployee(Employee):
 
 ###########################################################
 
+    # added by Diaz, Bryan 11/24/21
 class MaintenanceRecord:
     #initialize attributes
     def __init__(self, date, type_of_repair, apt_number, firstName, lastName):
@@ -574,6 +592,7 @@ class MaintenanceRecord:
 
 #############################################################
 
+    # added by Diaz, Bryan 11/24/21
 class ManageMaintenance(MaintenanceRecord):
     #initialize attributes
     def __init__(self, date, type_of_repair, apt_number, firstName, lastName):
