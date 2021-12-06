@@ -1,3 +1,5 @@
+# added by Diaz, Bryan 11/25/21
+
 granted = False
 def grant(): #grant access function
     global granted
@@ -50,6 +52,7 @@ def begin():# Starts the program if log in successful, begin function
     if(option!="login" and option!="reg"):
         begin()
         
+# added by Baxi, Utsav 11/25/21        
 begin()
 access(option)
 if(granted):
@@ -58,7 +61,7 @@ if(granted):
     print("[2] Maintenance")
 
     choice = input("Chose From The Menu Above:")
-
+    
 # printed second menu if user chose profile
     if choice == "1":
         print("[1] View Tenant Info")
