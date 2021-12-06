@@ -1,3 +1,6 @@
+# added by Diaz, Bryan 11/26/21
+# Resident Login verfication functions defined 
+
 granted = False
 def grant(): #grant access function
     global granted
@@ -49,7 +52,9 @@ def begin():# Starts the program if log in successful, begin function
     option = input("To Login or Register please type (login or reg): ")
     if(option!="login" and option!="reg"):
         begin()
-        
+
+# added by Baxi, Utsav 11/26/21
+# menu options presented at log in
 begin()
 access(option)
 
