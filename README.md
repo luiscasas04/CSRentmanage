@@ -1,6 +1,6 @@
 Rent management software (RMS)
 ________________________________
 The purpose of this project is to create a log in system for residents, employees and landlords.
-This program was created for residents to be able to pay their rent online and be able to put ticket request to maintenance.
-it is created to use object oriented programming. It has a log in system and has a data base.
-the database is a text file on python.
+Residents would be able to pay their rent online and write ticket request to the maintenance department.
+The program utilizes object oriented programming and includes a log in system and a data base.
+The database is a text file on python which stores all employee, tickets and landlord information.
